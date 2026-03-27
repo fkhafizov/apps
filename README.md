@@ -2,8 +2,28 @@
 
 2026.03.25
 
-```
 
+* [animations](https://fkhafizov.github.io/animation)
+  
+* [apps](https://fkhafizov.github.io/apps)
+  * [roc_aac_path_length](https://fkhafizov.github.io/apps/roc_aac_path_length.html):
+    1. Select N (num samples)
+    2. Generate Random r (ground truth)
+    3. Gemerate New Data  (build a plot)
+    4. SHOW MORE INFO (additional calculations such as TP, TN, ...)
+    5. Animate ROC
+    6. Observe: AAC = (1-AUC) x (N-k) x k
+  * [paths_areas_v3](https://fkhafizov.github.io/apps/paths_areas_v3.html)
+    1. N (dim of permuhedron)
+    2. RAND(P1) + RAND(P2) or enter permutations manually
+    3. DRAW
+    4. SHOW TRIANGLE
+    5. LEHMER CHART
+
+
+
+
+```
 …or create a new repository on the command line
 
 echo "# apps" >> README.md
