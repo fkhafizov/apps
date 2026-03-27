@@ -3,7 +3,7 @@
 2026.03.25
 
 
-* [animations](https://fkhafizov.github.io/animation)
+
   
 * [apps](https://fkhafizov.github.io/apps)
   * [roc_aac_path_length](https://fkhafizov.github.io/apps/roc_aac_path_length.html):
@@ -20,7 +20,7 @@
     4. SHOW TRIANGLE
     5. LEHMER CHART
 
-
+* [animations](https://fkhafizov.github.io/animation)
 
 
 ```
