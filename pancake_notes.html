@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pancake Problem Demo Description</title>
+    <title>Pancake Problem <a href="https://fkhafizov.github.io/apps/pancake_v5.html">DEMO</a> Description</title>
+
+    <H1>See vizualization demo <a href="https://fkhafizov.github.io/apps/pancake_v5.html">here</a>.</H1>
     
     <!-- KaTeX CSS for math rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -137,7 +139,7 @@
 
 Demo uses the **classic greedy pancake sorting algorithm** (also known as "sorting by prefix reversals"). Let me explain the algorithm and its complexity bounds:
 
-## The Greedy Algorithm
+## The Algorithm
 
 The algorithm works by repeatedly:
 1. Find the largest unsorted pancake
@@ -157,24 +159,16 @@ The algorithm works by repeatedly:
 - **Best known upper bound:** $\\frac{18n}{11} + O(1)$ (Chitturi et al., 2009)
 - **Tight lower bound:** $\\lceil\\frac{15n}{14}\\rceil$ (Gates & Papadimitriou, 1979)
 
-
-### Known Pancake Numbers $P(n)$
-The exact pancake number $P(n)$ (maximum flips needed for any permutation of size $n$) is only known for small values.
-The maximum flips needed for **any** permutation of size $n$:
-- $P(1) = 0$
-- $P(2) = 1$
+The exact pancake number $P(n)$ (maximum flips needed for any permutation of size $n$) is only known for small values:
 - $P(3) = 3$
 - $P(4) = 4$
 - $P(5) = 5$
 - $P(6) = 7$
 - $P(7) = 8$
-- $P(8) = 9$
-- $P(9) = 10$
-- $P(10) = 11$
 
-For larger $n$, we know: $\\frac{15n}{14} \\leq P(n) \\leq \\frac{18n}{11} + O(1)$
+## Let me add a flip counter to show how the algorithm performs:I'm using the **classic greedy pancake sorting algorithm**. Here's the complete analysis:
 
-## Here's the complete algorithm analysis:
+## Algorithm Description
 
 The greedy algorithm works by selection sort with flips:
 1. Find the largest unsorted pancake
@@ -198,8 +192,20 @@ This gives: $2(n-1) = 2n - 2$ flips
 
 Some permutations require at least $(n-1)$ flips. The theoretical lower bound for worst-case pancake sorting is $\\lceil\\frac{15n}{14}\\rceil$ (Gates & Papadimitriou, 1979).
 
+### Known Pancake Numbers $P(n)$
+The maximum flips needed for **any** permutation of size $n$:
+- $P(1) = 0$
+- $P(2) = 1$
+- $P(3) = 3$
+- $P(4) = 4$
+- $P(5) = 5$
+- $P(6) = 7$
+- $P(7) = 8$
+- $P(8) = 9$
+- $P(9) = 10$
+- $P(10) = 11$
 
-
+For larger $n$, we know: $\\frac{15n}{14} \\leq P(n) \\leq \\frac{18n}{11} + O(1)$
 
 ## Performance Visualization
 
@@ -215,7 +221,7 @@ I've added an **Algorithm Performance** panel that shows:
 For a random permutation of size $n=6$:
 - **Theoretical max**: $2(6-1) = 10$ flips
 - **Known optimal**: $P(6) = 7$ flips (some permutations need exactly 7)
-- **My algorithm**: Typically uses 8-10 flips depending on the permutation
+- **This algorithm**: Typically uses 8-10 flips depending on the permutation
 - **Lower bound**: At least 5 flips needed
 
 The greedy algorithm isn't optimal but guarantees a solution within $2n-2$ flips, which is practical and easy to understand!
