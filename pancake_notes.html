@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pancake Problem <a href="https://fkhafizov.github.io/apps/pancake_v5.html">DEMO</a> Description</title>
 
-    <H1>See vizualization demo <a href="https://fkhafizov.github.io/apps/pancake_v5.html">here</a>.</H1>
+    
     
     <!-- KaTeX CSS for math rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -124,7 +124,9 @@
     </style>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">
+        
+    </div>
 
     <!-- Marked.js for markdown parsing -->
     <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
@@ -135,13 +137,24 @@
 
     <script>
         // Your markdown content
-        const markdownContent = `# Pancake problem demo description
+        const markdownContent = `# Pancake problem <a href="https://fkhafizov.github.io/apps/pancake_v5.html">demo</a> description
+
 
 Demo uses the **classic greedy pancake sorting algorithm** (also known as "sorting by prefix reversals"). Let me explain the algorithm and its complexity bounds:
 
-## The Algorithm
+## Why pancake sorting algorithms and their  graphs?
 
-The algorithm works by repeatedly:
+* Одна из мотивационных идей в биологии:  Pancake sorting is a mathematical problem that serves as a powerful model in computational biology for understanding gene mutations, specifically genomic inversions.
+
+* Key Connections Between Pancake Sorting and Gene Mutation:
+  * Genomic Inversion as a Flip: Large-scale genetic mutation can occur when a segment of DNA is cut, reversed, and reinserted. This action is functionally identical to taking a subset of pancakes, flipping them, and replacing them in the stack.
+  * The Burnt Pancake Problem: A variant called the "burnt pancake problem" requires that the pancakes not only be sorted by size but also end up with the "burnt side down." This model represents signed permutations in biology, where genes have a specific orientation (5' to 3' direction).
+  * Reversal Distance and Evolution: The minimum number of flips needed to sort a stack (reversal distance) is used by phylogeneticists to measure the genetic divergence between species. A higher reversal distance suggests that species have evolved farther apart.
+  * Bacteria as Computers: Researchers have engineered E. coli bacteria to act as biological computers that solve the "burnt pancake problem" by using specialized enzymes to flip specific segments of DNA
+
+## See a vizualization demo <a href="https://fkhafizov.github.io/apps/pancake_v5.html">here</a>.
+
+The **greedy algorithm** works by repeatedly:
 1. Find the largest unsorted pancake
 2. Flip it to the top (if not already there)
 3. Flip it to its final position at the bottom of the unsorted portion
